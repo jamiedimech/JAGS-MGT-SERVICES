@@ -7,50 +7,37 @@
 </head>
 <body style="margin:0; padding:0; font-family:Arial, sans-serif; font-size:15px;">
 
-  <!-- OUTER WRAPPER: fixed 600px width, table-layout:fixed forces Outlook to honour column widths -->
   <table cellpadding="0" cellspacing="0" border="0" width="600" style="border-collapse:collapse; width:600px; table-layout:fixed;">
 
-    <!-- TABLE 1: Logo + Employee Details -->
+    <!-- ROW 1: Logo only -->
     <tr>
-
-      <!-- Column 1: Company Logo -->
-      <td width="160" valign="middle" style="vertical-align:middle; padding-right:2px; border-right:2px solid #017ac5; width:160px;">
-        <!--Image is stored on Jamie's GitHub to be publicly available-->
+      <td colspan="2" style="padding-bottom:10px;">
         <img src="https://raw.githubusercontent.com/jamiedimech/JAGS-MGT-SERVICES/refs/heads/main/V%20SMALL_JAGS%20LOGO.jpg" alt="JAGS MGT Service Logo" width="160" height="58" style="display:block; width:160px; height:58px;" />
       </td>
+    </tr>
 
-      <!-- Column 2: Employee Info -->
-      <td width="440" valign="middle" style="vertical-align:middle; padding:10px 0 10px 20px; width:440px;">
+    <!-- ROW 2: Name Badge | Separator | Employee Details -->
+    <tr>
 
-        <!-- Name Badge -->
-        <table cellpadding="0" cellspacing="0" border="0" width="1" style="margin-bottom:8px; border-collapse:collapse;">
+      <!-- Column 1: Name Badge -->
+      <td width="200" valign="middle" style="vertical-align:middle; padding-right:12px; border-right:2px solid #017ac5; width:200px;">
+        <table cellpadding="0" cellspacing="0" border="0" width="1" style="border-collapse:collapse;">
           <tr>
-            <td nowrap bgcolor="#017ac5" style="background-color:#017ac5; color:#ffffff; font-size:18px; font-weight:bold; padding:6px 16px; border-radius:20px; white-space:nowrap;">%%DisplayName%%</td>
+            <td nowrap bgcolor="#017ac5" style="background-color:#017ac5; color:#ffffff; font-size:15px; font-weight:bold; padding:6px 14px; border-radius:20px; white-space:nowrap;">%%DisplayName%%</td>
           </tr>
         </table>
+      </td>
 
-        <!-- Job Title -->
-        <br/>
+      <!-- Column 2: Employee Details -->
+      <td width="400" valign="middle" style="vertical-align:middle; padding:0 0 0 20px; width:400px;">
+
         <span style="font-size:14px; color:#333333; font-weight:bold;">%%Title%%</span>
         <br/>
-
-        <!-- Mobile -->
-        <span style="font-size:13px; color:#017ac5; text-decoration:none; display:inline-block; margin-top:2px;">
-          %%MobileNumber%%</span>
+        <span style="font-size:13px; color:#017ac5; display:inline-block; margin-top:4px;">%%MobileNumber%%</span>
         <br/>
-
-        <!-- Email -->
-        <a href="mailto:%%WindowsEmailAddress%%"
-           style="font-size:13px; color:#017ac5; text-decoration:none; display:inline-block; margin-top:2px;">
-          %%WindowsEmailAddress%%
-        </a>
-        <br/>
-
-        <!-- Address -->
-        <br/>
-        <span style="font-size:13px; color:#017ac5; text-decoration:none; display:inline-block; margin-top:2px; font-style:italic">
-          16, Triq Haz-Zebbug, Attard, ATD 9021, Malta </span>
-        <br/>
+        <a href="mailto:%%WindowsEmailAddress%%" style="font-size:13px; color:#017ac5; text-decoration:none; display:inline-block; margin-top:4px;">%%WindowsEmailAddress%%</a>
+        <br/><br/>
+        <span style="font-size:13px; color:#017ac5; font-style:italic;">16, Triq Haz-Zebbug, Attard, ATD 9021, Malta</span>
 
       </td>
     </tr>
