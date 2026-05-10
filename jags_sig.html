@@ -7,22 +7,20 @@
 </head>
 <body style="margin:0; padding:0; font-family:Arial, sans-serif; font-size:15px;">
 
-  <!-- OUTER WRAPPER -->
-  <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse:collapse; max-width:600px;">
+  <!-- OUTER WRAPPER: fixed 600px width, table-layout:fixed forces Outlook to honour column widths -->
+  <table cellpadding="0" cellspacing="0" border="0" width="600" style="border-collapse:collapse; width:600px; table-layout:fixed;">
 
     <!-- TABLE 1: Logo + Employee Details -->
     <tr>
 
       <!-- Column 1: Company Logo -->
-      <td width="160" style="vertical-align:middle; padding-right:2px; border-right:2px solid #017ac5; width:160px;">
-        <!--<a href = "https://smarteffects.com.mt/">-->
-          <!--Image is stored on Jamie's GitHub to be publicly available-->
+      <td width="160" valign="middle" style="vertical-align:middle; padding-right:2px; border-right:2px solid #017ac5; width:160px;">
+        <!--Image is stored on Jamie's GitHub to be publicly available-->
         <img src="https://raw.githubusercontent.com/jamiedimech/JAGS-MGT-SERVICES/refs/heads/main/GD_JAGS%20LOGO_PRIMARY_RGB.png" alt="JAGS MGT Service Logo" width="160" height="58" style="display:block; width:160px; height:58px;" />
-        </a>
       </td>
 
       <!-- Column 2: Employee Info -->
-      <td style="vertical-align:middle; padding:10px 0 10px 20px;">
+      <td valign="middle" style="vertical-align:middle; padding:10px 0 10px 20px;">
 
         <!-- Name Badge -->
         <div style="display:inline-block; background-color:#017ac5; color:#ffffff;
@@ -42,7 +40,7 @@
         <br/>
 
         <!-- Email -->
-        <a href="mailto:gordon@jagsmgt.com"
+        <a href="mailto:%%WindowsEmailAddress%%"
            style="font-size:13px; color:#017ac5; text-decoration:none; display:inline-block; margin-top:2px;">
           %%WindowsEmailAddress%%
         </a>
@@ -53,28 +51,27 @@
         <span style="font-size:13px; color:#017ac5; text-decoration:none; display:inline-block; margin-top:2px; font-style:italic">
           16, Triq Haz-Zebbug, Attard, ATD 9021, Malta </span>
         <br/>
-    
+
       </td>
     </tr>
 
-       <!-- BOTTOM BAR -->
+    <!-- BOTTOM BAR -->
     <tr>
       <td colspan="2" style="padding-top:12px;">
         <table cellpadding="0" cellspacing="0" border="0" width="100%" style="width:100%;">
           <tr>
             <td width="100%" style="background-color:#017ac5; height:5px; font-size:0; line-height:0;">&nbsp;</td>
           </tr>
-
-           
-          <td>
-            <span style="font-size:10px; color:#333333; font-style:italic;">The content of this email is confidential and intended only for the recipients specified in the message. It is strictly forbidden to share any part of this message with third parties without the written consent of the sender. If you received this message by mistake, or are not the intended recipient, please notify the sender and delete the message.</span>
-          </td>
-        </tr>
+          <tr>
+            <td style="padding-top:6px;">
+              <span style="font-size:10px; color:#333333; font-style:italic;">The content of this email is confidential and intended only for the recipients specified in the message. It is strictly forbidden to share any part of this message with third parties without the written consent of the sender. If you received this message by mistake, or are not the intended recipient, please notify the sender and delete the message.</span>
+            </td>
+          </tr>
         </table>
-        </td>
-     
+      </td>
     </tr>
-    </table>
+
+  </table>
 
 </body>
 </html>
